@@ -1,11 +1,37 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-ol,ul{
-    list-style: none;
-}
-a{
+
+a {
     text-decoration: none;
+}
+
+.container {
+    width: 1280px;
+    height: 500px;
+    margin: 0 auto;
+    background: url("../images/food_IMG.png") no-repeat;
+    background-size: cover;
+    padding: 140px 0 0 90px;
+}
+
+.texts h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.texts h3 {
+    margin-bottom: 60px;
+    font-size: 26px;
+}
+
+.button a {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: white;
+    padding: 13px 37px;
+    background-color: #FF8126;
+    border-radius: 5px;
 }
