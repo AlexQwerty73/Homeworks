@@ -1,9 +1,4 @@
 @media screen and (max-width: 1050px) {
-
-    /* header,
-    .header{
-        display: none;
-    } */
     .header-adaptation header {
         background-color: rgba(80, 80, 80, 0.7);
         position: absolute;
@@ -21,7 +16,7 @@
 
     .burger {
         position: absolute;
-        top: 15px;
+        top: 23px;
         left: 85%;
         width: 40px;
         height: 40px;
@@ -52,10 +47,10 @@
     .burger.active .burger-line:nth-child(3) {
         transform: rotate(-45deg);
     }
+
     .header-adaptation {
         position: fixed;
         display: flex;
-
     }
 
     .header-wrap {
@@ -88,8 +83,8 @@
     .header-wrap .menu li a,
     .main-produkt-wrap ul li a {
         font-size: 25px;
+        font-weight: 500;
     }
-
 
     .main-produkt-wrap ul li {
         position: relative;
@@ -106,8 +101,72 @@
         margin: 20px 0;
     }
 
-
     .hidden {
         overflow: hidden;
+    }
+
+
+
+    .main-product-section {
+        background-position: -600px center;
+        height: 500px;
+    margin: 0 auto;
+    }
+    .main-product-section .main-product {
+        margin-left: 60px;
+    }
+    .main-product-section .main-product h1 {
+        font-size: 35px;
+    }
+    .main-product-section .text-content p{
+        margin: 10px 0 30px;
+        font-size: 14px;
+    }
+
+    .special-proposals{
+        text-align: center;display: flex;
+        justify-content: center;
+    }
+    .card-container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 530px;
+    }
+    .card-container .card{
+        margin: 5px;
+    }
+
+    .subscribe-our_shops .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .s-o_s{
+        margin: 20px 0 0 0;
+    }
+    .subscribe.s-o_s{
+        margin-left: 30px;
+    }
+    .head-footer div,
+    .main-footer .text-content {
+        width: 100px;
+        margin: 0 10px;
+    }
+    .head-footer,
+    .main-footer{
+        display: flex;
+        justify-content: center;
+    }
+    .foot-footer .contacts{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .foot-footer .contacts,
+    .feedback {
+        padding: 15px;
+        height: 200px;
+        display: flex;
+        align-items: center;
     }
 }

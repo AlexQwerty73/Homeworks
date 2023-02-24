@@ -277,6 +277,7 @@ header .menu {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #EFEFEF;
+    padding: 25px 0 60px;
 }
 
 .main-footer .text-content {
@@ -286,7 +287,6 @@ header .menu {
     justify-content: space-between;
     width: 255px;
     height: 158px;
-    margin: 25px 0 60px;
 }
 
 .main-footer .text-content a {
@@ -297,10 +297,10 @@ header .menu {
 
 .foot-footer .contacts,
 .feedback {
-    height: 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 120px;
 }
 
 .icons-container {
@@ -309,6 +309,7 @@ header .menu {
 
 .icon {
     margin-right: 20px;
+    /* height: 120px; */
 }
 
 .feedback .feetback-btn a {
