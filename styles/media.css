@@ -88,7 +88,7 @@
 
     .header-wrap .menu li a,
     .main-produkt-wrap ul li a {
-        color:rgb(0, 0, 0);
+        color: rgb(0, 0, 0);
         font-size: 25px;
         font-weight: 500;
     }
@@ -155,9 +155,9 @@
         margin: 20px 0 0 0;
     }
 
-    .subscribe.s-o_s {
+    /* .subscribe.s-o_s {
         margin-left: 30px;
-    }
+    } */
 
     .head-footer div,
     .main-footer .text-content {
@@ -180,16 +180,18 @@
 
     .foot-footer .contacts,
     .feedback {
-        padding:15px ;
+        padding: 15px;
         height: 200px;
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .deep p:first-child {
         margin: 0 20px;
     }
-    .deep p:last-child{
+
+    .deep p:last-child {
         margin-right: 20px;
     }
 }
@@ -205,22 +207,86 @@
         padding: 150px 0;
     }
 
-    .special-proposals h3{
+    .special-proposals h3 {
         font-size: 30px;
     }
-    .card-container{
+
+    .card-container {
         width: 100vw;
         justify-content: center;
     }
 
-    .s-o_s{
+    .s-o_s {
         width: 350px;
         height: 350px;
         flex-direction: column;
         border-radius: 10px;
     }
+
     .head-footer div:first-child,
-    .main-footer div:first-child{
+    .main-footer div:first-child {
         display: none;
+    }
+}
+
+@media screen and (max-width: 560px) {
+
+    .main-product-section {
+        background-position: -860px center;
+    }
+
+    .main-product .text-content {
+        padding: 100px 0;
+        margin-left: -60px;
+        /* transform: scale(0.8); */
+        width: 230px;
+    }
+
+    .feedback {
+        flex-wrap: wrap;
+
+    }
+    .feedback div:last-child a{
+        margin-left: 40px;
+    }
+
+    .feedback * {
+        margin: -10px auto 0;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .feedback{
+        width: 300px;
+    }
+    .feedback div:last-child a{
+        margin-left: 0;
+    }
+    .feedback div:last-child {
+        margin-bottom: 60px;
+    }
+
+}
+
+@media screen and (max-width: 340px) {
+
+    .main-product-section {
+        background-position: -870px center;
+    }
+
+    .head-footer div:last-child,
+    .main-footer div:last-child {
+        display: none;
+    }
+
+    .feedback .feetback-btn a {
+        padding: 12px 26px;
+        border: 2px solid #F13C6E;
+        border-radius: 40px;
+        margin-left: 0;
+    }
+
+    .deep {
+        height: 100px;
     }
 }

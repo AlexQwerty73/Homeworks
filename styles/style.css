@@ -88,9 +88,7 @@ header .menu {
     background-color: #F13C6E;
 }
 
-.main-product-section .text-content h1,
-.main-product-section .text-content p,
-.main-product-section .text-content a {
+.main-product-section .text-content *{
     color: white;
 }
 
@@ -189,10 +187,7 @@ header .menu {
 
 .subscribe-our_shops .container {
     display: flex;
-}
-
-.subscribe-our_shops .subscribe {
-    margin: 0 30px 0 0;
+    justify-content: space-between;
 }
 
 .s-o_s {
@@ -311,7 +306,6 @@ header .menu {
 
 .icon {
     margin-right: 20px;
-    /* height: 120px; */
 }
 
 .feedback .feetback-btn a {
