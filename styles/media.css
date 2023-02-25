@@ -9,7 +9,7 @@
     .header-adaptation .beauty-company-img {
         border-bottom: none;
         position: absolute;
-        top: -7%;
+        top: -25px;
         left: 5%;
         transform: scale(0.7);
     }
@@ -66,8 +66,11 @@
         top: 70px;
     }
 
-    .header-wrap .menu,
     .main-produkt-wrap ul {
+        display: none;
+    }
+
+    .header-wrap .menu {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -110,63 +113,99 @@
     .main-product-section {
         background-position: -600px center;
         height: 500px;
-    margin: 0 auto;
+        margin: 0 auto;
     }
+
     .main-product-section .main-product {
         margin-left: 60px;
     }
+
     .main-product-section .main-product h1 {
         font-size: 35px;
     }
-    .main-product-section .text-content p{
+
+    .main-product-section .text-content p {
         margin: 10px 0 30px;
         font-size: 14px;
     }
 
-    .special-proposals{
-        text-align: center;display: flex;
+    .special-proposals {
+        text-align: center;
+        display: flex;
         justify-content: center;
     }
-    .card-container{
+
+    .card-container {
         display: flex;
         flex-wrap: wrap;
         width: 530px;
     }
-    .card-container .card{
+
+    .card-container .card {
         margin: 5px;
     }
 
-    .subscribe-our_shops .container{
+    .subscribe-our_shops .container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .s-o_s{
+
+    .s-o_s {
         margin: 20px 0 0 0;
     }
-    .subscribe.s-o_s{
+
+    .subscribe.s-o_s {
         margin-left: 30px;
     }
+
     .head-footer div,
     .main-footer .text-content {
         width: 100px;
         margin: 0 10px;
     }
+
     .head-footer,
-    .main-footer{
+    .main-footer {
         display: flex;
         justify-content: center;
     }
-    .foot-footer .contacts{
+
+    .foot-footer .contacts {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
     }
+
     .foot-footer .contacts,
     .feedback {
         padding: 15px;
         height: 200px;
         display: flex;
         align-items: center;
+    }
+
+    .deep p:first-child {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    .main-product-section {
+        background-position: -720px center;
+        margin: 0 auto;
+    }
+
+    .main-product .text-content {
+        padding: 150px 0;
+    }
+
+    .special-proposals h3{
+        font-size: 30px;
+    }
+    .special-proposals .card-container{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
