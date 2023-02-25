@@ -4,6 +4,8 @@
         position: absolute;
         width: 100vw;
         height: 70px;
+        z-index: 9999;
+        transform: scaleZ(100);
     }
 
     .header-adaptation .beauty-company-img {
@@ -12,12 +14,13 @@
         top: -25px;
         left: 5%;
         transform: scale(0.7);
+        z-index: 99999;
     }
 
     .burger {
         position: absolute;
         top: 23px;
-        left: 85%;
+        right: 20px;
         width: 40px;
         height: 40px;
         cursor: pointer;
@@ -59,7 +62,7 @@
     }
 
     .header-wrap.active {
-        background-color: rgba(141, 141, 141, 0.593);
+        background-color: rgba(180, 180, 180, 0.845);
         width: 100vw;
         height: 450px;
         position: absolute;
@@ -80,11 +83,12 @@
         margin: 20px 0;
         position: relative;
         top: 180px;
-        left: 20vw;
+        left: 40vw;
     }
 
     .header-wrap .menu li a,
     .main-produkt-wrap ul li a {
+        color:rgb(0, 0, 0);
         font-size: 25px;
         font-weight: 500;
     }
@@ -141,10 +145,6 @@
         width: 530px;
     }
 
-    .card-container .card {
-        margin: 5px;
-    }
-
     .subscribe-our_shops .container {
         display: flex;
         flex-wrap: wrap;
@@ -175,11 +175,12 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        /* margin-bottom: -100px; */
     }
 
     .foot-footer .contacts,
     .feedback {
-        padding: 15px;
+        padding:15px ;
         height: 200px;
         display: flex;
         align-items: center;
@@ -187,6 +188,9 @@
 
     .deep p:first-child {
         margin: 0 20px;
+    }
+    .deep p:last-child{
+        margin-right: 20px;
     }
 }
 
@@ -204,8 +208,19 @@
     .special-proposals h3{
         font-size: 30px;
     }
-    .special-proposals .card-container{
-        display: flex;
-        flex-wrap: wrap;
+    .card-container{
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .s-o_s{
+        width: 350px;
+        height: 350px;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    .head-footer div:first-child,
+    .main-footer div:first-child{
+        display: none;
     }
 }

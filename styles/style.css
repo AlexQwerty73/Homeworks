@@ -67,7 +67,6 @@ header .menu {
 .beauty-company-img img {
     width: 80px;
 }
-
 .main-produkt-wrap ul {
     display: flex;
     align-items: center;
@@ -85,8 +84,8 @@ header .menu {
     background-repeat: no-repeat;
     background-position: center center;
     height: 604px;
-    max-width: 1920px;
     margin: 0 auto;
+    background-color: #F13C6E;
 }
 
 .main-product-section .text-content h1,
@@ -144,6 +143,7 @@ header .menu {
     width: 255px;
     height: 363px;
     padding: 25px;
+    margin: 5px;
 }
 
 .card-content {
@@ -151,6 +151,7 @@ header .menu {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    /* flex-wrap: wrap; */
 }
 
 .card img {
@@ -197,6 +198,7 @@ header .menu {
 .s-o_s {
     width: 540px;
     height: 212px;
+    /* padding: 40px; */
     background-color: #F13C6E;
     display: flex;
     align-items: center;
