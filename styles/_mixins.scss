@@ -1,0 +1,13 @@
+@mixin font($size, $weight,$line,$family:'Josefin Sans',$color:black){
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line;
+    font-family: $family;
+    color: $color;
+}
+@mixin flex($justify, $align, $diraction){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $diraction;
+}

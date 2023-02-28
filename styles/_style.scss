@@ -1,0 +1,81 @@
+@import './mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 140px 147px;
+    @include flex(center, space-between, column);
+
+    // border: 1px solid black;
+    
+    &-text {
+        text-align: center;
+
+        h1 {
+            @include font(43px, 600, 130%);
+        }
+
+        p {
+            @include font(18px, 400, 160%, 'Open Sans');
+            margin: 20px 0 60px;
+        }
+    }
+
+    &-card {
+        @include flex(space-between, flex-end, row);
+        flex-wrap: wrap;
+        .card {
+            background: #FFFFFF;
+            box-shadow: 40px 15px 136px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+        }
+
+        img {
+            width: 362px;
+            height: 300px;
+        }
+
+        .text-content {
+            padding: 20px;
+        }
+
+        h2 {
+            @include font(32px, 600, 130%);
+        }
+
+        p {
+            @include font(16px, 400, 160%, 'Open Sans', rgba(0, 0, 0, 0.7));
+            margin: 10px 0 20px;
+        }
+
+        .learn-more {
+            position: relative;
+
+            &::after {
+                content: '';
+                background: url('../images/arrow.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 17px;
+                height: 12px;
+                position: absolute;
+                left: 100px;
+                top: 7px;
+            }
+
+            a {
+                @include font(16px, 600, 160%, 'Open Sans', #FF4B32);
+                position: relative;
+            }
+
+        }
+    }
+}
